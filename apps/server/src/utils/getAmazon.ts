@@ -29,7 +29,8 @@ export async function searchProducts(req: Request, res: Response) {
               "span.a-size-medium.a-color-base.a-text-normal"
             )[0].textContent,
             image: div.getElementsByTagName("img")[0].src,
-            url: div.getElementsByTagName("a")[0].href,
+            url: div.getElementsByTagName("h2")[0].getElementsByTagName("a")[0]
+              .href,
             price: div.getElementsByClassName("a-offscreen")[0].textContent,
           };
         });

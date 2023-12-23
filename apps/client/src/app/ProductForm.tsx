@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 
 const formSchema = z.object({
-  username: z.string(),
+  username: z.string().min(1),
 });
 
 const ProductForm = () => {
