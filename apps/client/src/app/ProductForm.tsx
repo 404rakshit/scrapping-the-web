@@ -16,25 +16,34 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const formSchema = z.object({
-  username: z.string().min(1),
+  product: z.string(),
 });
 
 const ProductForm = () => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  // const search = searchParams.get("search");
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      product: "",
     },
   });
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
+    const newParams = new URLSearchParams(searchParams.toString());
+
+    if (values.product) newParams.set("search", values.product);
+    else newParams.delete("search");
+
+    router.push(`/?${newParams}`);
   }
 
   return (
@@ -45,12 +54,14 @@ const ProductForm = () => {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="product"
+          // defaultValue={searchParams.get("search") || ""}
           render={({ field }) => (
             <FormItem>
-              {/* <FormLabel>Username</FormLabel> */}
+              {/* <FormLabel>product</FormLabel> */}
               <FormControl>
                 <Input
+                  defaultValue={searchParams.get("search") || ""}
                   autoComplete="off"
                   className="flex-1"
                   placeholder="Product Name"

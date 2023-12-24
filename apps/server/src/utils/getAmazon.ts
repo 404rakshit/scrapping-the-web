@@ -31,7 +31,21 @@ export async function searchProducts(req: Request, res: Response) {
             image: div.getElementsByTagName("img")[0].src,
             url: div.getElementsByTagName("h2")[0].getElementsByTagName("a")[0]
               .href,
-            price: div.getElementsByClassName("a-offscreen")[0].textContent,
+            price: parseFloat(
+              div
+                .getElementsByClassName("a-offscreen")[0]
+                .textContent?.split("₹")[1]
+                ?.replace(/,/g, "")!
+            ),
+            reviews: parseFloat(
+              div
+                .querySelector(".a-size-base.s-underline-text")
+                ?.textContent?.replace(/,/g, "")!
+            ),
+            review: +div
+              .querySelector(".a-row.a-size-small")
+              ?.querySelector("span")
+              ?.attributes[0].textContent?.split(" ")[0]!,
           };
         });
       }
