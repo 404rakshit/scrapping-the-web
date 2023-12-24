@@ -8,159 +8,148 @@ import { Button } from "@/components/ui/button";
 
 let falseData = [
   {
-    title: "Cookwell Bullet Mixer Grinder 600 Watts (5 Jars, 3 Blades, Silver)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81yobRRV8nL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Cookwell-Bullet-Mixer-Grinder-Silver/dp/B097XJQZ8H/ref=sr_1_1?keywords=Mixers&qid=1703420566&sr=8-1",
-    price: 2477,
-    reviews: 19192,
-    review: 4.3,
-  },
-  {
-    title: "Butterfly Smart Mixer Grinder, 750W, 4 Jars (Grey)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71+cDVETcIL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Butterfly-Smart-750-Watt-Mixer-Grinder/dp/B075JJ5NQC/ref=sr_1_2?keywords=Mixers&qid=1703420566&sr=8-2",
-    price: 2999,
-    reviews: 23614,
-    review: 4,
+    title:
+      "Katana GF66 Core i7 12th Gen - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050/144 Hz) Katana GF66 12UC-632IN Gaming Laptop (15.6 inch, Black, 2.25 kg)",
+    image: "https://m.media-amazon.com/images/I/51kkHOlY-BL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Katana-GF66-Core-12th/dp/B0BLJF2H1X/ref=sr_1_1?keywords=MSI+Katana&qid=1703427769&sr=8-1",
+    price: 75990,
+    reviews: 1,
+    review: 5,
   },
   {
     title:
-      "Longway Super Dlx 750 Watt Juicer Mixer Grinder with 4 Jars for Grinding, Mixing, Juicing with Powerful Motor | 1 Year Warranty | (Black & Gray, 4 Jars)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71TdcjXdSHL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Longway-Super-Dlx-Mixer-Grinder/dp/B0C33FLXJJ/ref=sr_1_3?keywords=Mixers&qid=1703420566&sr=8-3",
-    price: 1499,
-    reviews: 2234,
+      "Katana 15, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming Laptop (8GBx2/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 3050, GDDR6 6GB/Black/2.25Kg), B12UDXK-1005IN",
+    image: "https://m.media-amazon.com/images/I/61DadtLsm2L._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Katana-15-i5-12450H-B12UDXK-1005IN/dp/B0C3HY3226/ref=sr_1_2?keywords=MSI+Katana&qid=1703427769&sr=8-2",
+    price: 72990,
+    reviews: 5,
+    review: 4.7,
+  },
+  {
+    title:
+      "Katana 15, Intel 12th Gen. i7-12650H, 40CM QHD 165Hz Gaming Laptop (8GBx2/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 4070,GDDR6 8GB/Black/2.25Kg), B12VGK-1295IN",
+    image: "https://m.media-amazon.com/images/I/61-nt9Mfv5L._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i7-12650H-Windows-GeForce-B12VGK-1295IN/dp/B0CJ9Q2825/ref=sr_1_3?keywords=MSI+Katana&qid=1703427769&sr=8-3",
+    price: 132990,
+    reviews: null,
+    review: null,
+  },
+  {
+    title:
+      'Katana GF66 12UCOK 15.6" FHD (1920 * 1080) Gaming Laptop - Alder Lake Intel Core i7-12650H DDR5 8GB*2 (4800MHz) RAM 512GB NVMe PCIe SSD Gen4x4 RTX3050 GDDR6 4GB Win 11 Home - 9S7-158424-800',
+    image: "https://m.media-amazon.com/images/I/71vXD7cLZfL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Katana-12UCOK-Gaming-Laptop/dp/B09XWDJBMV/ref=sr_1_4?keywords=MSI+Katana&qid=1703427769&sr=8-4",
+    price: 100961,
+    reviews: 13,
     review: 4.2,
   },
   {
     title:
-      "Lifelong LLMG23 Power Pro 500-Watt Mixer Grinder with 3 Jars (Liquidizing, Wet Grinding and Chutney Jar), Stainless Steel blades, 1 Year Warranty (Black)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61zhqJg1bTL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Lifelong-LLMG23-500-Watt-Liquidizing-Stainless/dp/B09X5C9VLK/ref=sr_1_4?keywords=Mixers&qid=1703420566&sr=8-4",
-    price: 1399,
-    reviews: 8332,
-    review: 3.9,
+      "Katana GF66, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming Laptop (16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA RTX 3050 4GB GDDR6/Black/2.25Kg), 12UCOK-693IN",
+    image: "https://m.media-amazon.com/images/I/71phu3c7ONL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Katana-12UCOK-Gaming-Laptop/dp/B09XX2G3ND/ref=sr_1_5?keywords=MSI+Katana&qid=1703427769&sr=8-5",
+    price: 69990,
+    reviews: 13,
+    review: 4.2,
   },
   {
     title:
-      "Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61JOzccwTCL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Prestige-IRIS-mixer-grinder-Black/dp/B08CFJBZRK/ref=sr_1_5?keywords=Mixers&qid=1703420566&sr=8-5",
-    price: 3199,
-    reviews: 17949,
-    review: 3.8,
+      "Katana 17, Intel 13th Gen. i7-13620H, 44CM FHD 144Hz Gaming Laptop (8GBx2/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX2050, 4GB GDDR6/Black/2.6Kg), B13UCXK-256IN",
+    image: "https://m.media-amazon.com/images/I/71+bSm87KmL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i7-13620H-Windows-GeForce-B13UCXK-256IN/dp/B0BTW1Y5NP/ref=sr_1_6?keywords=MSI+Katana&qid=1703427769&sr=8-6",
+    price: 88990,
+    reviews: 8,
+    review: 2.8,
   },
   {
     title:
-      "Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81+M1QrVNIL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Prestige-Iris-Grinder-Stainless-Juicer/dp/B0756K5DYZ/ref=sr_1_6?keywords=Mixers&qid=1703420566&sr=8-6",
-    price: 2999,
-    reviews: 46196,
-    review: 3.9,
-  },
-  {
-    title:
-      "Prestige 500 Watts Orion Mixer Grinder with 3 Stainless Steel Jars |2 years warranty| Red & White",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51dxXaDA9GL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/TTK-Prestige-Limited-Grinder-1200ml/dp/B09ZDVL7L8/ref=sr_1_7?keywords=Mixers&qid=1703420566&sr=8-7",
-    price: 2099,
-    reviews: 2369,
-    review: 3.9,
-  },
-  {
-    title:
-      "Philips Daily Collection HL7610/04 500-Watt 3 Jar Mixer Grinder (Blue)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51az8GZf-ZL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Philips-Daily-Collection-HL7610-500-Watt/dp/B00N8T4D5S/ref=sr_1_8?keywords=Mixers&qid=1703420566&sr=8-8",
-    price: 1999,
-    reviews: 123,
-    review: 3.6,
-  },
-  {
-    title:
-      "Preethi Blue Leaf Diamond MG-214 mixer grinder 750 watt (Blue/White), 3 jars & Flexi Lid, FBT motor with 2yr Guarantee & Lifelong Free Service",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51a02ZDkk6S._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Preethi-Blue-Leaf-Diamond-750-Watt/dp/B0188KPKB2/ref=sr_1_9?keywords=Mixers&qid=1703420566&sr=8-9",
-    price: 3599,
-    reviews: 13208,
+      "Katana 15, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming Laptop (8GB/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 3050, GDDR6 6GB/Black/2.25Kg), B12UDXK-1006IN",
+    image: "https://m.media-amazon.com/images/I/61DadtLsm2L._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Katana-15-i5-12450H-B12UDXK-1006IN/dp/B0C3HWXV8X/ref=sr_1_7?keywords=MSI+Katana&qid=1703427769&sr=8-7",
+    price: 69990,
+    reviews: 15,
     review: 4.1,
   },
   {
-    title: "Butterfly Hero Mixer Grinder, 500W, 3 Jars (Grey)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71r6x8qJF4L._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Butterfly-Hero-500-Mixer-Grinder/dp/B07TXCY3YK/ref=sr_1_10?keywords=Mixers&qid=1703420566&sr=8-10",
-    price: 1999,
-    reviews: 12401,
-    review: 3.9,
-  },
-  {
     title:
-      "Lifelong 500W Mixer Grinder with 4 Jars | Stainless Steel blades | 3 Speed Operation, 1 Year Manufacturer's Warranty(Black) LLMG39",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/614aB7YNyzL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Lifelong-Stainless-Operation-Manufacturers-LLMG39/dp/B0C7LDLNWP/ref=sr_1_11?keywords=Mixers&qid=1703420566&sr=8-11",
-    price: 1399,
-    reviews: 36573,
-    review: 3.8,
-  },
-  {
-    title:
-      "Bajaj GX-1 Mixer Grinder 500W|Superior Mixie For Kitchen|2-in-1 for Dry Grinding| Blade Function With Titan Motor|3 Stainless Steel Mixer Jars|1 Year Product Warranty By Bajaj|Black",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51NNA+k9S0L._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Bajaj-GX-Mixer-Grinder-Function/dp/B0BB3SDD7J/ref=sr_1_12?keywords=Mixers&qid=1703420566&sr=8-12",
-    price: 2279,
-    reviews: 21718,
-    review: 4,
-  },
-  {
-    title: "Sujata Supermix, Mixer Grinder, 900 Watts, 3 Jars (White)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51e5W3iYRSL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Sujata-Supermix-AM-007-Watt-Juicer-Grinder/dp/B075S9FVRY/ref=sr_1_13?keywords=Mixers&qid=1703420566&sr=8-13",
-    price: 5525,
-    reviews: 2069,
+      "Katana 15, Intel Core i7-13620H, 40CM FHD 144Hz Gaming Laptop (8GBx2/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 4060, GDDR6 8GB/Black/2.25Kg), B13VFK-296IN",
+    image: "https://m.media-amazon.com/images/I/617m30IvETL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i7-13620H-Windows-GeForce-B13VFK-296IN/dp/B0BTW2K2LN/ref=sr_1_8?keywords=MSI+Katana&qid=1703427769&sr=8-8",
+    price: 135990,
+    reviews: 11,
     review: 4.5,
   },
   {
     title:
-      "Bosch Appliances TrueMixx Pro Mixer Grinder MGM8642BIN, 750W, 4 Jars, (Black)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/610yiAGFePL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Bosch-TrueMixx-Pro-750-Watt-Grinder/dp/B07NW2S7N1/ref=sr_1_14?keywords=Mixers&qid=1703420566&sr=8-14",
-    price: 5299,
-    reviews: 7111,
-    review: 4.3,
+      "Sword 15 A12UDX, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming Laptop (16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX3050, 6GB GDDR6/White/2.25Kg), A12UDX-468IN",
+    image: "https://m.media-amazon.com/images/I/61CIMpkHZdL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i5-12450H-Windows-GeForce-A12UDX-468IN/dp/B0BW9NT5SF/ref=sr_1_9?keywords=MSI+Katana&qid=1703427769&sr=8-9",
+    price: 78990,
+    reviews: 11,
+    review: 3.8,
   },
   {
     title:
-      "Wonderchef Nutri-blend Mixer, Grinder & Blender|Powerful 400W 22000 RPM 100% Full Copper Motor|Stainless steel Blades|2 unbreakable jars|2 Years warranty | Recipe book by Chef Sanjeev Kapoor | Black",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61626Ya4tJL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Wonderchef-Nutri-Blend-Watts-Juicer-Grinder/dp/B00W56GLOQ/ref=sr_1_15?keywords=Mixers&qid=1703420566&sr=8-15",
-    price: 2699,
-    reviews: 29475,
+      "Sword 15 A12VF, Intel 12th Gen. i7-12650H, 40CM FHD 144Hz Gaming Laptop (8GBx2/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4060, 8GB GDDR6/White/2.25Kg), A12VF-401IN",
+    image: "https://m.media-amazon.com/images/I/71cRA3lD-8L._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i7-12650H-Gaming-Laptop-Windows/dp/B0BW9NMXP5/ref=sr_1_10?keywords=MSI+Katana&qid=1703427769&sr=8-10",
+    price: 102990,
+    reviews: 32,
     review: 3.9,
   },
   {
-    title: "Butterfly Jet Elite Mixer Grinder, 750W, 4 Jars (Grey)",
-    image:
-      "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61c4if-wvcL._AC_UY218_.jpg",
-    url: "https://www.amazon.in/Butterfly-Jet-Elite-750-Watt-Grinder/dp/B07DGD4Z4C/ref=sr_1_16?keywords=Mixers&qid=1703420566&sr=8-16",
-    price: 3299,
-    reviews: 28753,
+    title:
+      "Sword 15 A12VF, Intel 12th Gen. i7-12650H, 40CM FHD 144Hz Gaming Laptop (16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4050, 6GB GDDR6/White/2.25Kg), A12VE-402IN",
+    image: "https://m.media-amazon.com/images/I/71cRA3lD-8L._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i7-12650H-Windows-GeForce-A12VE-402IN/dp/B0BW9N46YZ/ref=sr_1_11?keywords=MSI+Katana&qid=1703427769&sr=8-11",
+    price: 97990,
+    reviews: 32,
     review: 3.9,
+  },
+  {
+    title:
+      "Titan GT77 HX, Intel 13th Gen. i9-13980HX, 44CM FHD 144Hz Mini LED, HDR 1000 Gaming Laptop (64GB/2TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX4080, 12GB GDDR6/Core Black/3.3Kg), 13VH-093IN",
+    image: "https://m.media-amazon.com/images/I/71yWBoj2kuL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-i9-13980HX-Windows-GeForce-13VH-093IN/dp/B0BWJX4X2H/ref=sr_1_12?keywords=MSI+Katana&qid=1703427769&sr=8-12",
+    price: 389990,
+    reviews: 15,
+    review: 3.7,
+  },
+  {
+    title:
+      "Bravo 15 Gaming Laptop, AMD Ryzen 5 7535HS, 40CM FHD 144Hz Laptop (16GB/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 2050, GDDR6 4GB/Black/2.25Kg), C7UCXK-094IN",
+    image: "https://m.media-amazon.com/images/I/61PrdKgYaYL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Gaming-Windows-GeForce-C7UCXK-094IN/dp/B0C5J8QMPM/ref=sr_1_13?keywords=MSI+Katana&qid=1703427769&sr=8-13",
+    price: 57990,
+    reviews: 5,
+    review: 3.3,
+  },
+  {
+    title:
+      "Modern 15, AMD Ryzen 7-7730U, 40CM FHD 60Hz Laptop (16GB/1TB NVMe SSD/Windows 11 Home/AMD Radeon Graphics/Classic Black/1.7Kg), B7M-073IN",
+    image: "https://m.media-amazon.com/images/I/718AiQQtJBL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Modern-15-Graphics-B7M-073IN/dp/B0BYZWQF4N/ref=sr_1_14?keywords=MSI+Katana&qid=1703427769&sr=8-14",
+    price: 59990,
+    reviews: 14,
+    review: 3.6,
+  },
+  {
+    title:
+      "Cyborg 15, Intel 12th Gen. i5-12450H, 40CM FHD 144Hz Gaming Laptop (8GB/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 2050, GDDR6 4GB/Black/1.98Kg), A12UCX-265IN",
+    image: "https://m.media-amazon.com/images/I/61UQ4m-H+yL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Cyborg-15-i5-12450H-A12UCX-265IN/dp/B0C3J2MHG9/ref=sr_1_15?keywords=MSI+Katana&qid=1703427769&sr=8-15",
+    price: 55999,
+    reviews: 35,
+    review: 3.9,
+  },
+  {
+    title:
+      "Bravo 15 Gaming Laptop,AMD Ryzen 5 7535HS, 40CM FHD 144Hz Laptop (8GB/512GB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 2050, GDDR6 4GB/Black/2.25Kg), C7UCXK-095IN",
+    image: "https://m.media-amazon.com/images/I/61PrdKgYaYL._AC_UY218_.jpg",
+    url: "https://www.amazon.in/MSI-Gaming-Windows-GeForce-C7UCXK-095IN/dp/B0C5JC7CJJ/ref=sr_1_16?keywords=MSI+Katana&qid=1703427769&sr=8-16",
+    price: 54990,
+    reviews: 10,
+    review: 4.9,
   },
 ];
 

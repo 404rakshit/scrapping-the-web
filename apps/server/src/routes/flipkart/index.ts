@@ -1,8 +1,7 @@
 import { Router } from "express";
+import { searchProducts } from "../../utils/getFlipkart";
 const route = Router();
 
-route.get("/", (req, res) => {
-  res.json("Flipkart");
-});
+route.post("/", searchProducts);
 
 export default route;

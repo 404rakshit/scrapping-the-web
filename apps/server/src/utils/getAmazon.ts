@@ -29,8 +29,9 @@ export async function searchProducts(req: Request, res: Response) {
               "span.a-size-medium.a-color-base.a-text-normal"
             )[0].textContent,
             image: div.getElementsByTagName("img")[0].src,
-            url: div.getElementsByTagName("h2")[0].getElementsByTagName("a")[0]
-              .href,
+            url: div.querySelector<HTMLAnchorElement>(
+              "a.a-link-normal.s-underline-text.s-underline-link-text.s-link-style.a-text-normal"
+            )?.href,
             price: parseFloat(
               div
                 .getElementsByClassName("a-offscreen")[0]

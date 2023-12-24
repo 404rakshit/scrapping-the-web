@@ -48,6 +48,7 @@ const ProductCard = ({
           </Badge>
           <Link
             className={buttonVariants({ variant: "link", size: "sm" })}
+            target="_blank"
             href={url || "#"}
           >
             Details
