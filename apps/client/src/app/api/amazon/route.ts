@@ -1,27 +1,21 @@
+import { type NextRequest, NextResponse } from "next/server";
 import puppeteer from "puppeteer";
-import { Request, Response } from "express";
 
-export async function searchProducts(req: Request, res: Response) {
-  const { query }: searchBody = req?.body;
-  //   console.log(query);
+export async function GET(req: NextRequest) {
+  const searchParams = req.nextUrl.searchParams;
+  const userSearch = searchParams.get("q")?.toString();
 
-  if (!query) return res.status(404).json("Missing Query");
-
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox"],
-  });
-  const page = await browser.newPage();
+  let browser;
 
   try {
-    await page.goto(`https://www.amazon.in/s?k=${query.split(" ").join("+")}`);
+    if (!userSearch) throw { status: 404, message: "Query not provided" };
 
-    // let products = {}
-    // if (!userSearch) throw { message: "Got an Error", status: 403 };
+    browser = await puppeteer.launch({ headless: "new" });
+    const page = await browser.newPage();
 
-    // await page.type("#twotabsearchtextbox", query);
-    // await page.keyboard.press("Enter");
-    // await page.waitForNavigation();
+    await page.goto(
+      `https://www.amazon.in/s?k=${userSearch.split(" ").join("+")}`
+    );
 
     const products = await page.$$eval(
       "div.sg-col-20-of-24.s-result-item.s-asin.sg-col-0-of-12.sg-col-16-of-20.sg-col.s-widget-spacing-small.sg-col-12-of-16:not(.AdHolder)",
@@ -55,13 +49,12 @@ export async function searchProducts(req: Request, res: Response) {
       }
     );
 
-    // const options = await page.$$eval('div > span.options', options => {
-    //     return options.map(option => option.textContent);
-    //   });
-
-    res.json(products);
-  } catch ({ status, message }: any) {
-    res.status(status || 500).json(message || "Internal Server Error");
+    return NextResponse.json(products);
+  } catch (error: any) {
+    return NextResponse.json(
+      { error: error.message },
+      { status: error.status || 200 }
+    );
   } finally {
     if (browser) {
       await browser.close();

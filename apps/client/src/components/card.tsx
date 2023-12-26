@@ -24,7 +24,7 @@ const ProductCard = ({
     <Card className="flex gap-1">
       <div className="relative h-40 w-40 border rounded-md overflow-hidden">
         <Image
-          className="object-cover opacity-70"
+          className="object-contain opacity-70"
           alt={title}
           loader={() => image}
           src={image}
@@ -43,7 +43,7 @@ const ProductCard = ({
           </CardDescription>
         </CardHeader>
         <CardContent className="p-3 pt-0 flex justify-between items-end">
-          <Badge variant={"secondary"} className="rounded px-5 py-2">
+          <Badge variant={"default"} className="rounded px-3 py-1 my-1">
             ₹{price}
           </Badge>
           <Link

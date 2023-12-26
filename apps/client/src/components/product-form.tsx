@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const formSchema = z.object({
   product: z.string(),
@@ -23,6 +23,7 @@ const formSchema = z.object({
 const ProductForm = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const pathName = usePathname();
   const newParams = new URLSearchParams(searchParams.toString());
   // const search = searchParams.get("search");
 
@@ -41,7 +42,7 @@ const ProductForm = () => {
     if (values.product) newParams.set("search", values.product);
     else newParams.delete("search");
 
-    router.push(`/?${newParams}`);
+    router.push(`${pathName}/?${newParams}`);
   }
 
   return (

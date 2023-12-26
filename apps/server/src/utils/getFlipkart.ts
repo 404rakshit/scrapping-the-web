@@ -7,7 +7,10 @@ export async function searchProducts(req: Request, res: Response) {
 
   if (!query) return res.status(404).json("Missing Query");
 
-  const browser = await puppeteer.launch({ headless: "new" });
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox"],
+  });
   const page = await browser.newPage();
 
   try {

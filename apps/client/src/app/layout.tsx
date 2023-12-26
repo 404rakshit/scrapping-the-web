@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "./Header";
 import Menu from "@/components/menu";
 import { preah } from "@/components/fonts";
+import ReactQueryProvider from "@/util/reactQuery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,11 +28,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div className="flex dark:bg-slate-950 min-h-[88lvh]">
-            <Menu />
-            {children}
-          </div>
+          <ReactQueryProvider>
+            <Header />
+            <div className="flex dark:bg-slate-950 min-h-[88lvh]">
+              <Menu />
+              {children}
+            </div>
+          </ReactQueryProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -12,11 +12,13 @@ export default function Home() {
         <ProductTray
           avatar={"/amazon/icon.png"}
           baseImg={"/amazon/banner.jpg"}
+          site="amazon"
         />
 
         <ProductTray
           avatar={"/flipkart/icon.jpeg"}
           baseImg={"/flipkart/banner.jpg"}
+          site="flipkart"
         />
       </div>
     </main>
