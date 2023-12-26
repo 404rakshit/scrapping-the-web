@@ -1,7 +1,8 @@
 import { Router } from "express";
-import { searchProducts } from "../../utils/getFlipkart";
+import { getAllProducts } from "../../utils/getFlipkart";
 const route = Router();
 
-route.post("/", searchProducts);
+route.post("/", getAllProducts);
 
+route.get("/", getAllProducts);
 export default route;

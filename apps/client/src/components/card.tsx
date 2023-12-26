@@ -43,8 +43,11 @@ const ProductCard = ({
           </CardDescription>
         </CardHeader>
         <CardContent className="p-3 pt-0 flex justify-between items-end">
-          <Badge variant={"default"} className="rounded px-3 py-1 my-1">
-            ₹{price}
+          <Badge
+            variant={"secondary"}
+            className="rounded px-3 py-1 my-1 text-base"
+          >
+            ₹ {price}
           </Badge>
           <Link
             className={buttonVariants({ variant: "link", size: "sm" })}

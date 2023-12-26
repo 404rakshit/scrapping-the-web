@@ -1,7 +1,9 @@
 import { Router } from "express";
-import { searchProducts } from "../../utils/getAmazon";
+import { getAllProducts } from "../../utils/getAmazon";
 const route = Router();
 
-route.post("/", searchProducts);
+route.post("/", getAllProducts);
+
+route.get("/", getAllProducts);
 
 export default route;
